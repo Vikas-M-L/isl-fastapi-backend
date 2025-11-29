@@ -1,0 +1,26 @@
+# Windows-friendly requirements for Python 3.11/3.12
+# Use this file if the default requirements.txt fails to resolve on Windows.
+
+flask==3.0.3
+flask-cors==4.0.1
+
+# TensorFlow build for Windows. If this fails, try the Intel build below.
+# Use 2.16.1 to match your existing requirements.txt and wheel availability.
+tensorflow==2.16.1
+# tensorflow-intel==2.16.1  # alternative for some CPUs
+
+# MediaPipe 0.10.x supports Python 3.8–3.12 with prebuilt wheels
+mediapipe==0.10.14
+
+numpy==1.26.4
+pandas==2.2.3
+Pillow==10.4.0
+opencv-python==4.10.0.84
+
+# Optional features
+google-generativeai==0.7.2
+googletrans==3.1.0a0
+python-dotenv==1.0.1
+fastapi==0.115.0
+uvicorn==0.30.6
+requests==2.32.3
